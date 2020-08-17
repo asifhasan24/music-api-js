@@ -46,124 +46,120 @@
             <div class="search-bar col-md-6 mx-auto">
                 <h1 class="text-center">Lyrics Search</h1>
                 <div class="search-box my-5">
-                    <input type="text" class="form-control" placeholder="Enter your artist song name">
-                    <button class="btn btn-success search-btn">Search</button>
+                    <input id="search-bar" type="text" class="form-control" placeholder="Enter your artist song name" value="">
+                    <button id="search-button" class="btn btn-success search-btn">Search</button>
                 </div>
             </div>
             <!-- === Simple results === -->
-            <div class="d-flex justify-content-center">
-                <div class="">
-                    <p class="author lead"><strong>Purple Noon</strong> Album by <span>Washed Out</span> <button class="btn btn-success">Get Lyrics</button></p>
-                    <p class="author lead"><strong>Purple Noon</strong> Album by <span>Washed Out</span> <button class="btn btn-success">Get Lyrics</button></p>
-                    <p class="author lead"><strong>Purple Noon</strong> Album by <span>Washed Out</span> <button class="btn btn-success">Get Lyrics</button></p>
-                    <p class="author lead"><strong>Purple Noon</strong> Album by <span>Washed Out</span> <button class="btn btn-success">Get Lyrics</button></p>
-                    <p class="author lead"><strong>Purple Noon</strong> Album by <span>Washed Out</span> <button class="btn btn-success">Get Lyrics</button></p>
+            <!-- <div class="d-flex justify-content-center">
+                <div id="search-result-list" class="">
+                   <p class="author lead"><strong class="song-title-0">Purple Noon</strong> Album by <span class="song-artist-0">Washed Out</span> <button class="btn btn-success get-lyrics-btn-0">Get Lyrics</button></p>
                 </div>
-            </div>
+            </div> -->
             <!-- Single Lyrics -->
-            <div class="single-lyrics text-center">
+            <!-- <div class="single-lyrics text-center">
                 <button class="btn go-back">&lsaquo;</button>
                 <h2 class="text-success mb-4">Pentatonix - Na Na Na</h2>
-                <pre class="lyric text-white">
-    Wont go whistling like the wind blows,
-    Looking out my window,
-    Just to see the shine
-    Maybe you might call it crazy,
-    How Im acting lately,
+                <pre id="whole-lyrics" class="lyric text-white"> -->
+                    <!-- Wont go whistling like the wind blows,
+                    Looking out my window,
+                    Just to see the shine
+                    Maybe you might call it crazy,
+                    How Im acting lately,
 
-    Skipping through the sky
-
-
-
-     I see so clearly,
-
-    Why Im always feeling free.
-
-    So I sleep when my dreams,
-
-    Looking like reality
+                    Skipping through the sky
 
 
 
-    (Gonna feel it! Na na na...) x4
+                    I see so clearly,
+
+                    Why Im always feeling free.
+
+                    So I sleep when my dreams,
+
+                    Looking like reality
 
 
 
-    Gonna feel it!
+                    (Gonna feel it! Na na na...) x4
 
 
 
-    I know where the greener grass grows
-
-    Youll just have to follow
-
-    To the other side
+                    Gonna feel it!
 
 
 
-     Lets go tiptoe on a tight rope,
+                    I know where the greener grass grows
 
-    Fallings only natural
+                    Youll just have to follow
 
-    Just spread your wings and fly
-
-
-
-    Youll see so clearly,
-
-    Why Im always feeling free.
-
-    So I sleep when our dreams
-
-    Looking like reality
+                    To the other side
 
 
 
-    (Gonna feel it! Na na na...) x4
+                    Lets go tiptoe on a tight rope,
+
+                    Fallings only natural
+
+                    Just spread your wings and fly
 
 
 
-    Bring it down like
+                    Youll see so clearly,
 
-    Ohh way oh
+                    Why Im always feeling free.
 
-    Yeah yeah yeah yeah yeah yeah
+                    So I sleep when our dreams
 
-    Break it down like
-
-    Ohh way oh
-
-     Yeah, yeah, yeah...
-
-    All around like
-
-    Ohh way oh
-
-    Yeah, yeah, yeah...
-
-    Sing it loud like!
-
-    Ohh way oh
-
-    Ah oo oo ooo
+                    Looking like reality
 
 
 
-     Gonna feel it! (Na na na...)
+                    (Gonna feel it! Na na na...) x4
 
-     Make it sound like! (Na na na...)
 
-    All around like! (Na na na...)
 
-    Sing it loud like! (Na na na...)
+                    Bring it down like
 
-    Gonna feel like! (Na na na...)
-                </pre>
-            </div>
+                    Ohh way oh
+
+                    Yeah yeah yeah yeah yeah yeah
+
+                    Break it down like
+
+                    Ohh way oh
+
+                    Yeah, yeah, yeah...
+
+                    All around like
+
+                    Ohh way oh
+
+                    Yeah, yeah, yeah...
+
+                    Sing it loud like!
+
+                    Ohh way oh
+
+                    Ah oo oo ooo
+
+
+
+                    Gonna feel it! (Na na na...)
+
+                    Make it sound like! (Na na na...)
+
+                    All around like! (Na na na...)
+
+                    Sing it loud like! (Na na na...)
+
+                    Gonna feel like! (Na na na...) -->
+                <!-- </pre>
+            </div> -->
             <!-- === Fancy results === -->
-            <div class="search-result col-md-8 mx-auto py-4">
+            <div id="search-result-list" class="search-result col-md-8 mx-auto py-4">
                 <!-- single result -->
-                <div class="single-result row align-items-center my-3 p-3">
+                <!-- <div class="single-result row align-items-center my-3 p-3">
                     <div class="col-md-9">
                         <h3 class="lyrics-name">Purple Noon</h3>
                         <p class="author lead">Album by <span>Washed Out</span></p>
@@ -171,41 +167,8 @@
                     <div class="col-md-3 text-md-right text-center">
                         <button class="btn btn-success">Get Lyrics</button>
                     </div>
-                </div>
-                <!-- ./ single result -->
-
-                <!-- single result -->
-                <div class="single-result row align-items-center my-3 p-3">
-                    <div class="col-md-9">
-                        <h3 class="lyrics-name">Purple Noon</h3>
-                        <p class="author lead">Album by <span>Washed Out</span></p>
-                    </div>
-                    <div class="col-md-3 text-md-right text-center">
-                        <button class="btn btn-success">Get Lyrics</button>
-                    </div>
-                </div>
-                <!-- ./ single result -->
-                <!-- single result -->
-                <div class="single-result row align-items-center my-3 p-3">
-                    <div class="col-md-9">
-                        <h3 class="lyrics-name">Purple Noon</h3>
-                        <p class="author lead">Album by <span>Washed Out</span></p>
-                    </div>
-                    <div class="col-md-3 text-md-right text-center">
-                        <button class="btn btn-success">Get Lyrics</button>
-                    </div>
-                </div>
-                <!-- ./ single result -->
-                <!-- single result -->
-                <div class="single-result row align-items-center my-3 p-3">
-                    <div class="col-md-9">
-                        <h3 class="lyrics-name">Purple Noon</h3>
-                        <p class="author lead">Album by <span>Washed Out</span></p>
-                    </div>
-                    <div class="col-md-3 text-md-right text-center">
-                        <button class="btn btn-success">Get Lyrics</button>
-                    </div>
-                </div>
+                    
+                </div> -->
                 <!-- ./ single result -->
             </div>
 
@@ -220,6 +183,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
     <!-- Custom Script Here -->
+    <script src="script.js"></script>
 
 </body>
 
